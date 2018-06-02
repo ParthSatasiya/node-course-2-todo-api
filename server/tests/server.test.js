@@ -35,7 +35,7 @@ describe('POST /todos', () => {
     
     it('Should not create todo with invalid body data', (done) => {
        
-        request(app)
+        request(app)    
             .post('/todos')
             .send({})
             .expect(400)
